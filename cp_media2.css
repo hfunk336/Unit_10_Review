@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 8
+   Review Assignment
+
+   Cinema Penguin Styles for Media
+   Author: 
+   Date:   
+
+   Filename: 
+
+*/
+
+/* Media Styles */
+audio, video{
+   /* sizes and positions the audio and video */
+   display: block;
+   width: 95%;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* Track Styles */
+::cues{
+   /* sets the color, font, and size for the captions */
+   background-color: transparent;
+   text-shadow: black 1px 1px 2px;
+   color: rgb(255, 177, 66);
+   font-size: 1.2em;
+   font-family: sans-serif;
+}
+::cues(.Title){
+   /* only the title caption will be serif and double font */
+   font-size: 2em;
+   font-family: serif;
+}
